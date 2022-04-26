@@ -68,7 +68,9 @@ function activateSection () {
 
 
 function scrollToSection(section){
-    section.scrollIntoView();
+
+    section.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+
 }
 
 /**

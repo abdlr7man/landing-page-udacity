@@ -57,6 +57,14 @@ main {
     padding-top: 3em;
 }
 
+
+
+@media only screen and (min-width: 300px){
+    .main__hero {
+        margin-top: 300px;
+    }
+}
+
 section {
     position: relative;
     min-height: 80vh;
@@ -67,9 +75,12 @@ section {
 
 /* Navigation Styles*/
 .navbar__menu ul {
+    display: flex;
     padding-left: 0;
     margin: 0;
     text-align: right;
+    flex-direction: column;
+    float: inline-start;
 }
 
 .navbar__menu li {
@@ -96,6 +107,7 @@ section {
     transition: ease 0.3s all;
 }
 
+
 /* Header Styles */
 .page__header {
     background: #fff;
@@ -103,6 +115,7 @@ section {
     top: 0;
     width: 100%;
     z-index: 5;
+    margin-bottom: auto;
 }
 
 /* Footer Styles */
@@ -122,12 +135,17 @@ section {
 .landing__container {
     padding: 1em;
     text-align: left;
+   
 }
 
 @media only screen and (min-width: 35em){
     .landing__container {
         max-width: 50em;
         padding: 4em;
+    }
+    .navbar__menu ul{
+        float: right;
+        display: block;
     }
 }
 
